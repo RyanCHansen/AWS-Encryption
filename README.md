@@ -9,8 +9,8 @@ Phase 1:  (Curent Phase)
   
 Phase 2:  
 -Use AWS Lambda service for encryption/decryption methods.  
--Use AWS S3 cloud storage as option for storing encrypted files.
+-Use AWS S3 cloud storage as option for storing encrypted files.  
   
 Phase 3:  
--Login for users
+-Login for users  
 -Connect to a AWS DB for user credentials
