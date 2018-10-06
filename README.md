@@ -3,7 +3,7 @@ version 0.1
 
 Project to learn/use a variety of AWS features as well as some built-in Java encryption libraries.
 
-Phase 1:  
+Phase 1:  (Curent Phase)
 -Establish basic GUI.  
 -Enable encryption/decryption of .txt files locally.
   
@@ -12,4 +12,5 @@ Phase 2:
 -Use AWS S3 cloud storage as option for storing encrypted files.
   
 Phase 3:  
--TBD
+-Login for users
+-Connect to a AWS DB for user credentials
