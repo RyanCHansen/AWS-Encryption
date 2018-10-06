@@ -3,31 +3,34 @@ package gui;
 import java.awt.Dimension;
 import javax.swing.JFrame;
 import javax.swing.JMenuBar;
-import javax.swing.JPanel;
+import javax.swing.JTabbedPane;
 
 /**
- * Creates the JFrame for the application which will hold
- * all of the components of the GUI.
+ * Creates the JFrame for the application which will be the container of
+ * the panel tabs.
  * 
  * @author Ryan Hansen
  */
 public class GUI {
 
 	private static final Dimension DEFAULT_SIZE = new Dimension(500, 400);
-	
+	private static JFrame myFrame = new JFrame("AWS Project");
+	private static JMenuBar myMenuBar;
+	private static JTabbedPane myTabbedPanes;
+
 	public void start() {
-		final JFrame frame = new JFrame("AWS Project");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
-        frame.setPreferredSize(DEFAULT_SIZE);
+		myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		myFrame.setPreferredSize(DEFAULT_SIZE);
+
+		myMenuBar = new MenuBar();		
+		myTabbedPanes = new TabbedPanes(myFrame);
+
+		myFrame.setJMenuBar(myMenuBar);
+		myFrame.add(myTabbedPanes);
 		
-        final JMenuBar menuBar = new MenuBar();
-        final JPanel mainPanel = new MainPanel(frame);
-        
-        frame.setJMenuBar(menuBar);
-        frame.add(mainPanel);
-        frame.pack();
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
+		myFrame.pack();
+		myFrame.setLocationRelativeTo(null);
+		myFrame.setVisible(true);
 	}
 
 }
