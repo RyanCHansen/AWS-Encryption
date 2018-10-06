@@ -3,7 +3,7 @@ version 0.1
 
 Project to learn/use a variety of AWS features as well as some built-in Java encryption libraries.
 
-Phase 1:  (Curent Phase)
+Phase 1:  (Curent Phase)  
 -Establish basic GUI.  
 -Enable encryption/decryption of .txt files locally.
   
