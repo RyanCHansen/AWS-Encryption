@@ -2,6 +2,7 @@ package gui;
 
 import java.awt.BorderLayout;
 
+import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -13,14 +14,20 @@ import javax.swing.JPanel;
 public class CryptoPanel extends JPanel {
 
 	private static final long serialVersionUID = -8438576029794021570L;
-	private static JPanel myButtonPanel;
+	private JPanel myButtonPanel;
+	private CryptoTextArea myTextArea;
 
 	public CryptoPanel(final JFrame theJFrame) {
 		super();
 		this.setLayout(new BorderLayout());
+		this.setBorder(BorderFactory.createLineBorder(getBackground(), 10, false));
 		
-		myButtonPanel = new CryptoButtonPanel(theJFrame);
-		this.add(myButtonPanel, BorderLayout.WEST);
+		myTextArea = new CryptoTextArea();
+		this.add(myTextArea, BorderLayout.CENTER);
+		
+		myButtonPanel = new CryptoButtonPanel(myTextArea);
+		this.add(myButtonPanel, BorderLayout.NORTH);
+		
 	}
 
 }

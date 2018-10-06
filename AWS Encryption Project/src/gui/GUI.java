@@ -1,5 +1,6 @@
 package gui;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.JFrame;
 import javax.swing.JMenuBar;
@@ -14,13 +15,14 @@ import javax.swing.JTabbedPane;
 public class GUI {
 
 	private static final Dimension DEFAULT_SIZE = new Dimension(500, 400);
-	private static JFrame myFrame = new JFrame("AWS Project");
-	private static JMenuBar myMenuBar;
-	private static JTabbedPane myTabbedPanes;
+	private JFrame myFrame = new JFrame("AWS Project");
+	private JMenuBar myMenuBar;
+	private JTabbedPane myTabbedPanes;
 
 	public void start() {
 		myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		myFrame.setPreferredSize(DEFAULT_SIZE);
+		myFrame.getContentPane().setBackground(Color.LIGHT_GRAY);
 
 		myMenuBar = new MenuBar();		
 		myTabbedPanes = new TabbedPanes(myFrame);

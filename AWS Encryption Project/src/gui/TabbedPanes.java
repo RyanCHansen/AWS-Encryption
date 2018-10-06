@@ -1,5 +1,8 @@
 package gui;
 
+import java.awt.Color;
+
+import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
@@ -13,12 +16,13 @@ import javax.swing.JTabbedPane;
 public class TabbedPanes extends JTabbedPane {
 
 	private static final long serialVersionUID = 8277740541486786213L;
-	private static JPanel myFilePanel;
+	private JPanel myFilePanel;
 
 	public TabbedPanes(JFrame theJFrame) {
 		super();
 		myFilePanel = new CryptoPanel(theJFrame);
-		this.add("File Selection", myFilePanel);
+		this.add("Crypto Panel", myFilePanel);
+		this.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY, 5, false));
 			
 		//temporary panels - will change/use later
 		final JPanel tempPanel = new JPanel();

@@ -16,8 +16,8 @@ import javax.swing.JOptionPane;
 public class FileMenu extends JMenu {
 
 	private static final long serialVersionUID = 4163657867326062798L;
-	private static JMenuItem myExitItem;
-	private static JMenuItem myAboutItem;
+	private JMenuItem myExitItem;
+	private JMenuItem myAboutItem;
 
 	public FileMenu() {
 		super("File");
