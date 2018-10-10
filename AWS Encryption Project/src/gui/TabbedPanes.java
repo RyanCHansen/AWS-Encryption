@@ -16,13 +16,20 @@ import javax.swing.JTabbedPane;
 public class TabbedPanes extends JTabbedPane {
 
 	private static final long serialVersionUID = 8277740541486786213L;
-	private JPanel myFilePanel;
+	private JPanel myCryptoPanel;
+	private JPanel myLoginPanel;
 
 	public TabbedPanes(JFrame theJFrame) {
 		super();
-		myFilePanel = new CryptoPanel(theJFrame);
-		this.add("Crypto Panel", myFilePanel);
 		this.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY, 5, false));
+		
+		//adds the login panel as the first tabbed pane.
+		myLoginPanel = new LoginPanel();
+		this.add("Login Panel", myLoginPanel);
+		
+		//adds crypto panel as the second pane.
+		myCryptoPanel = new CryptoPanel(theJFrame);
+		this.add("Crypto Panel", myCryptoPanel);
 			
 		//temporary panels - will change/use later
 		final JPanel tempPanel = new JPanel();

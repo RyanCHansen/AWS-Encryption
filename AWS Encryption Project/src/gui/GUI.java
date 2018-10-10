@@ -22,6 +22,7 @@ public class GUI {
 	public void start() {
 		myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		myFrame.setPreferredSize(DEFAULT_SIZE);
+		myFrame.setMinimumSize(DEFAULT_SIZE);
 		myFrame.getContentPane().setBackground(Color.LIGHT_GRAY);
 
 		myMenuBar = new MenuBar();		
