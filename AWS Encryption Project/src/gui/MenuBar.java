@@ -14,6 +14,7 @@ public class MenuBar extends JMenuBar {
 	private static final long serialVersionUID = -9132887326381921444L;
 	private JMenu myFileMenu;
 
+	
 	public MenuBar() {
 		super();
 

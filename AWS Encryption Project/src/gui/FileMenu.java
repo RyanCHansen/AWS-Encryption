@@ -19,6 +19,7 @@ public class FileMenu extends JMenu {
 	private JMenuItem myExitItem;
 	private JMenuItem myAboutItem;
 
+	
 	public FileMenu() {
 		super("File");
 		this.setMnemonic(KeyEvent.VK_F);

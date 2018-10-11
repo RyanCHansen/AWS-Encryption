@@ -14,11 +14,13 @@ public class CryptoTextArea extends JTextArea {
 
 	private static final long serialVersionUID = 4102610971352163909L;
 	
+	
 	public CryptoTextArea() {
 		super();
 		//this.setLineWrap(true);
 		this.setEditable(false);
 	}
+	
 	
 	/**
 	 * Used to add a time stamp to the text which will be printed in

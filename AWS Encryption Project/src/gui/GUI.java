@@ -19,6 +19,7 @@ public class GUI {
 	private JMenuBar myMenuBar;
 	private JTabbedPane myTabbedPanes;
 
+	
 	public void start() {
 		myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		myFrame.setPreferredSize(DEFAULT_SIZE);

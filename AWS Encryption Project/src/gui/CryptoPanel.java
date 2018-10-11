@@ -17,6 +17,7 @@ public class CryptoPanel extends JPanel {
 	private JPanel myButtonPanel;
 	private CryptoTextArea myTextArea;
 
+	
 	public CryptoPanel(final JFrame theJFrame) {
 		super();
 		this.setLayout(new BorderLayout());
@@ -27,7 +28,6 @@ public class CryptoPanel extends JPanel {
 		
 		myButtonPanel = new CryptoButtonPanel(myTextArea);
 		this.add(myButtonPanel, BorderLayout.NORTH);
-		
 	}
 
 }

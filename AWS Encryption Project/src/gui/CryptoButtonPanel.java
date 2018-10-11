@@ -30,6 +30,7 @@ public class CryptoButtonPanel extends JPanel {
 	private JButton myFileChooserButton, myEncryptionButton, myDecryptionButton;
 	private File mySelectedFile, mySaveFileLocation;
 
+	
 	public CryptoButtonPanel(CryptoTextArea theTextArea) {
 		super();
 		this.setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
@@ -47,7 +48,6 @@ public class CryptoButtonPanel extends JPanel {
 		
 		myDecryptionButton = new JButton("Decrypt");
 		this.add(myDecryptionButton);
-		
 		
 		//action listener for the file chooser button.
 		myFileChooserButton.addActionListener(new ActionListener() {
@@ -84,8 +84,7 @@ public class CryptoButtonPanel extends JPanel {
 					}
 				}
 			}
-		});
-		
+		});		
 	}
 	
 }

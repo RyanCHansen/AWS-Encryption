@@ -19,6 +19,7 @@ public class TabbedPanes extends JTabbedPane {
 	private JPanel myCryptoPanel;
 	private JPanel myLoginPanel;
 
+	
 	public TabbedPanes(JFrame theJFrame) {
 		super();
 		this.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY, 5, false));
