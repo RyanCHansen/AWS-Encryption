@@ -7,7 +7,7 @@ Phase 1:
 -Establish basic GUI.   
 -Add user login.  
 -Hash user passwords with LibSodium library (argon2 hash function).  
--Store user passwords in AWS database.
+-Use AWS relational database for storing user account information.  
 
 Phase 2:  
 -Enable encryption/decryption of .txt files locally with AES encryption.  
