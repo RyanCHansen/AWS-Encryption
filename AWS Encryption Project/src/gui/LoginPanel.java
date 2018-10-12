@@ -10,6 +10,8 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
+import crypto.PWHashing;
+
 /**
  * the panel which will allow the use to login to their account
  * and also create a new account.
@@ -26,6 +28,7 @@ public class LoginPanel extends JPanel {
 	private JTextField myUserTextField;
 	private JPasswordField myUserPasswordField;
 	private JLabel myUserLabel, myPasswordLabel;
+	private PWHashing myPWHash; 
 
 	
 	public LoginPanel() {
@@ -101,7 +104,8 @@ public class LoginPanel extends JPanel {
 		//if the account information passes the initial screening process pass
 		//the information to the class which will try to login with these credentials.
 		if (correctAccountInfo == true) {
-			System.out.println("call create account");
+			myPWHash = new PWHashing();
+			myPWHash.hashThePW(enteredPassword);
 		}	
 	}
 	

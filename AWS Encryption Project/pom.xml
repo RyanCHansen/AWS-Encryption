@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ryanhansen.awscryptoproject</groupId>
   <artifactId>aws-crypto-project</artifactId>
-  <version>0.1</version>
+  <version>0.2</version>
   <name>aws-crypto-project</name>
   
   <properties>
@@ -22,5 +22,26 @@
       </plugin>
     </plugins>
   </build>
+
+  <repositories>
+    <repository>
+      <id>lazysodium-java</id>
+      <url>https://dl.bintray.com/terl/lazysodium-maven</url>
+    </repository>
+ </repositories>
+
+  <dependencies>
+  	<dependency>
+  		<groupId>com.goterl.lazycode</groupId>
+  		<artifactId>lazysodium-java</artifactId>
+  		<version>3.3.0</version>
+  	</dependency>
+  	
+  	<dependency>
+  		<groupId>net.java.dev.jna</groupId>
+  		<artifactId>jna</artifactId>
+  		<version>5.0.0</version>
+  	</dependency>
+  </dependencies>
   
 </project>

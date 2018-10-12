@@ -37,7 +37,7 @@ public class FileMenu extends JMenu {
 		myAboutItem.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(final ActionEvent theEvent) {
-				JOptionPane.showMessageDialog(null, "Created by Ryan Hansen\nVersion - 0.1",
+				JOptionPane.showMessageDialog(null, "Created by Ryan Hansen\nVersion - 0.2",
 						"About", JOptionPane.PLAIN_MESSAGE);
 			}
 		});
